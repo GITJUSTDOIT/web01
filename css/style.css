@@ -153,3 +153,12 @@ body {
   }
 
 }
+
+@media screen and (min-width: 767px) {
+  
+  .main_ContentBox {
+    align-items: center;
+    margin: auto;
+    width: 50%;
+  }
+}
