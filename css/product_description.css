@@ -1,0 +1,170 @@
+@import "nav.css";
+
+@media (max-width: 390px) {
+  body * {
+    font-size: 10px;
+  }
+}
+
+.product_desc_container {
+  width: 80%;
+  max-width: 50em;
+  min-width: 390px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.product_main_box {
+  width: auto;
+  height: 200px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; /* 화면이 작아질 경우에도 여러 줄에 걸쳐 표시되도록 수정 */
+}
+
+.product_main_img,
+.product_main_desc {
+  box-sizing: border-box;
+  flex: 1; /* 화면 너비에 따라 동적으로 크기 조절 */
+  max-width: 100%; /* 부모 너비보다 큰 경우를 방지 */
+  height: 200px;
+  margin: 5px;
+}
+
+.product_main_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1em;
+  /* border: 1px solid purple; */
+}
+.product_desc_menu_box {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  margin: 3em 0;
+}
+
+.product_desc_menu {
+  border: 1px solid #e5e5e5;
+  width: 16.67%;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_desc_menu:hover {
+  background-color: #5d2bb8;
+  color: white;
+}
+
+.product_desc_schedule {
+  height: 5em;
+  width: 100%;
+  margin-bottom: 1em;
+  display: flex;
+  margin: 1em auto;
+}
+
+.product_desc_schedule > div:first-child {
+  width: 20%;
+  height: 100%;
+  background-color: #5b6070;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2em;
+}
+.product_desc_schedule > div:first-child span:first-child {
+  font-size: 1.2em;
+}
+
+.product_desc_schedule > div:last-child {
+  width: 80%;
+  background-color: #f1f4f7;
+  padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product_desc_schedule > div:last-child span:first-child {
+  font-weight: 700;
+}
+
+.product_reservation h2 {
+  width: 90%;
+  margin: 1em auto;
+}
+.product_resev_person {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 1em;
+  margin: 2em auto;
+}
+.product_resev_person_left {
+  display: flex;
+  flex-direction: column;
+}
+.product_resev_person_left span:first-child {
+  opacity: 0.5;
+}
+.product_resev_person_right {
+  display: flex;
+}
+.product_resev_person_right div {
+  border: 1px solid #f5f5f5;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.product_resev_price {
+  width: 90%;
+  margin: 1em auto;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_reservation a {
+  text-decoration: none;
+  color: white;
+  background-color: #5d2bb8;
+  padding: 1em;
+  border-radius: 0.5em;
+  width: 90%;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.product_reservation {
+  border: 1px solid #e5e5e5;
+  width: 18em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+}
+@media (min-width: 391px) {
+  .product_reservation {
+    position: absolute;
+    top: 30%;
+    right: -22em;
+  }
+}
+@media (max-width: 390px) {
+  .product_reservation {
+    position: absolute;
+    bottom: -30em;
+    right: 1em;
+  }
+}
