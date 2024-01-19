@@ -157,6 +157,11 @@
   margin-left: 10%;
 }
 
+.join2-submit-box input:hover {
+  background-color: #5d2bb8;
+  color: white;
+}
+
 .join2-div-info-box {
   width: 90%;
   margin: 1em 0;
